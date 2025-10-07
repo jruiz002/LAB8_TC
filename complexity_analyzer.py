@@ -176,7 +176,7 @@ class ComplexityAnalyzer:
         
         # Save the plot
         filename = f'performance_analysis_problem_{problem_num}.png'
-        filepath = os.path.join('/Users/joseruiz_002/Documents/UVG/6to Semestre/Teoria de la computacion/LAB8_TC', filename)
+        filepath = filename
         plt.savefig(filepath, dpi=300, bbox_inches='tight')
         plt.show()
         
@@ -186,7 +186,7 @@ class ComplexityAnalyzer:
         """Save results to CSV file"""
         df = pd.DataFrame(results)
         filename = f'performance_results_problem_{problem_num}.csv'
-        csv_path = os.path.join('/Users/joseruiz_002/Documents/UVG/6to Semestre/Teoria de la computacion/LAB8_TC', filename)
+        csv_path = filename
         df.to_csv(csv_path, index=False)
         print(f"Resultados guardados en: {filename}")
     
@@ -257,7 +257,7 @@ class ComplexityAnalyzer:
         plt.yscale('log')  # Log scale for better comparison
         plt.tight_layout()
         
-        comparison_path = '/Users/joseruiz_002/Documents/UVG/6to Semestre/Teoria de la computacion/LAB8_TC/comparison_all_problems.png'
+        comparison_path = 'comparison_all_problems.png'
         plt.savefig(comparison_path, dpi=300, bbox_inches='tight')
         plt.show()
         

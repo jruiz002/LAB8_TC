@@ -128,14 +128,13 @@ def create_visualization(results):
     plt.tight_layout()
     
     # Save the plot
-    plt.savefig('/Users/joseruiz_002/Documents/UVG/6to Semestre/Teoria de la computacion/LAB8_TC/performance_analysis.png', 
-                dpi=300, bbox_inches='tight')
+    plt.savefig('performance_analysis.png', dpi=300, bbox_inches='tight')
     plt.show()
 
 def save_results_to_csv(results):
     """Save results to CSV file"""
     df = pd.DataFrame(results)
-    csv_path = '/Users/joseruiz_002/Documents/UVG/6to Semestre/Teoria de la computacion/LAB8_TC/performance_results.csv'
+    csv_path = 'performance_results.csv'
     df.to_csv(csv_path, index=False)
     print(f"\nResultados guardados en: {csv_path}")
 
