@@ -114,6 +114,10 @@ python menu.py
 python menu.py
 ```
 
+### 🎥 Video de demostración
+
+Lab 8 TC (YouTube): https://youtu.be/uS27Dgkk-_o?si=vj-LzUgkaegQUfAz
+
 ### Menú Interactivo
 
 El sistema presenta las siguientes opciones:
